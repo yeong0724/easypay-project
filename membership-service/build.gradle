@@ -7,7 +7,7 @@ ext {
 }
 
 group = 'com.easypay.membership'
-version = "1.0.1"
+version = "1.0.2"
 
 dependencies {
     // compileOnly 'org.projectlombok:lombok'
@@ -27,7 +27,8 @@ dependencies {
 
     implementation project(path: ':common')
     testImplementation 'junit:junit:4.13.1'
-    runtimeOnly 'com.h2database:h2'
+//    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'mysql:mysql-connector-java'
 }
 
 docker {

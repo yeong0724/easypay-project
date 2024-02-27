@@ -18,7 +18,7 @@ services:
       - MYSQL_PASSWORD=mysqlpw
 
   membership-service:
-    image: easy-pay-membership-service:0.0.1-SNAPSHOT
+    image: easy-pay-membership-service:1.0.2
     networks:
       - easypay_network
     ports:
