@@ -7,7 +7,7 @@ ext {
 }
 
 group = 'com.easypay.membership'
-version = "1.0.0"
+version = "1.0.1"
 
 dependencies {
     // compileOnly 'org.projectlombok:lombok'
@@ -32,9 +32,13 @@ dependencies {
 
 docker {
     println(tasks.bootJar.outputs.files)
+    // image name
     name rootProject.name+'-'+project.name + ":" + version
-    dockerfile file('./Dockerfile')
+    // Dockerfile
+    dockerfile file('../Dockerfile')
+    // 어떤 파일들을 Dockerfile 에 복사 할 것인가?
     files tasks.bootJar.outputs.files
+    // Dockerfile 에 전달하는 인자
     buildArgs(['JAR_FILE': tasks.bootJar.outputs.files.singleFile.name])
 }
 
