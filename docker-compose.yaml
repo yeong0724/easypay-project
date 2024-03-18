@@ -18,11 +18,25 @@ services:
       - MYSQL_PASSWORD=mysqlpw
 
   membership-service:
-    image: easy-pay-membership-service:1.0.2
+    image: easy-pay-membership-service:1.0.3
     networks:
       - easypay_network
     ports:
       - "8081:8080"
+    depends_on:
+      - mysql
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/easy_pay?useSSL=false&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=mysqluser
+      - SPRING_DATASOURCE_PASSWORD=mysqlpw
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL5InnoDBDialect
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+  banking-service:
+    image: easy-pay-banking-service:1.0.5
+    networks:
+      - easypay_network
+    ports:
+      - "8082:8080"
     depends_on:
       - mysql
     environment:

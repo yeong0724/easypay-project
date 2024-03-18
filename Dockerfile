@@ -1,4 +1,5 @@
 # ./gradlew docker : root 하위에 있는 module 전부 docker image 생성
+# docker-compose up -d
 FROM openjdk:17-jdk-slim
 EXPOSE 8080
 ARG JAR_FILE
