@@ -3,7 +3,7 @@ package com.easypay.membership.application.port.in;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.easypay.common.SelfValidating;
+import com.easypay.common.SelfValidating;
 
 @Data
 @Builder

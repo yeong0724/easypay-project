@@ -10,7 +10,7 @@ import com.easypay.banking.application.port.out.RequestExternalFirmBankingPort;
 import com.easypay.banking.application.port.out.RequestFirmBankingPort;
 import com.easypay.banking.domain.FirmBankingRequest;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.UseCase;
+import com.easypay.common.UseCase;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;

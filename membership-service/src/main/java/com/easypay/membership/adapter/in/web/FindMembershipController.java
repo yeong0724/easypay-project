@@ -4,7 +4,7 @@ import com.easypay.membership.application.port.in.FindMembershipCommand;
 import com.easypay.membership.application.port.in.FindMembershipUseCase;
 import com.easypay.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.WebAdapter;
+import com.easypay.common.WebAdapter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -5,7 +5,7 @@ import com.easypay.membership.application.port.out.ModifyMembershipPort;
 import com.easypay.membership.application.port.out.RegisterMembershipPort;
 import com.easypay.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.PersistenceAdapter;
+import com.easypay.common.PersistenceAdapter;
 
 @PersistenceAdapter
 @RequiredArgsConstructor

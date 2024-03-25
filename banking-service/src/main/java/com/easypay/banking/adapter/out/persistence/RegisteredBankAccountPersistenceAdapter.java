@@ -3,7 +3,7 @@ package com.easypay.banking.adapter.out.persistence;
 import com.easypay.banking.application.port.out.RegisterBankAccountPort;
 import com.easypay.banking.domain.RegisteredBankAccount;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.PersistenceAdapter;
+import com.easypay.common.PersistenceAdapter;
 
 @PersistenceAdapter
 @RequiredArgsConstructor

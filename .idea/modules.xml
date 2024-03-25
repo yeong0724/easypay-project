@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/banking-service/easy-pay.banking-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/banking-service/easy-pay.banking-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/easy-pay.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/easy-pay.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/logging-consumer/easy-pay.logging-consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/logging-consumer/easy-pay.logging-consumer.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/membership-service/easy-pay.membership-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/membership-service/easy-pay.membership-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-service/easy-pay.money-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-service/easy-pay.money-service.main.iml" />
     </modules>
   </component>
 </project>
