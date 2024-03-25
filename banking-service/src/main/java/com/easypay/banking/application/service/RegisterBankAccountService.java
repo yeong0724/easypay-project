@@ -10,7 +10,7 @@ import com.easypay.banking.application.port.out.RegisterBankAccountPort;
 import com.easypay.banking.application.port.out.RequestBankAccountInfoPort;
 import com.easypay.banking.domain.RegisteredBankAccount;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.UseCase;
+import com.easypay.common.UseCase;
 import org.springframework.transaction.annotation.Transactional;
 
 

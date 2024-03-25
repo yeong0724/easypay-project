@@ -1,10 +1,9 @@
 package com.easypay.banking.adapter.out.external.bank;
 
-import com.easypay.banking.adapter.out.persistence.SpringDataRegisteredBankAccountRepository;
 import com.easypay.banking.application.port.out.RequestBankAccountInfoPort;
 import com.easypay.banking.application.port.out.RequestExternalFirmBankingPort;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.ExternalSystemAdapter;
+import com.easypay.common.ExternalSystemAdapter;
 
 
 @ExternalSystemAdapter

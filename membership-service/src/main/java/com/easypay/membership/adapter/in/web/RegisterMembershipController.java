@@ -4,7 +4,7 @@ import com.easypay.membership.application.port.in.RegisterMembershipCommand;
 import com.easypay.membership.application.port.in.RegisterMembershipUseCase;
 import com.easypay.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.WebAdapter;
+import com.easypay.common.WebAdapter;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

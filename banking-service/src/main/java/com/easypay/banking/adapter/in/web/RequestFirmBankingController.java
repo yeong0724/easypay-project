@@ -1,12 +1,10 @@
 package com.easypay.banking.adapter.in.web;
 
 import com.easypay.banking.application.port.in.FirmBankingRequestCommand;
-import com.easypay.banking.application.port.in.RegisterBankAccountCommand;
 import com.easypay.banking.application.port.in.RequestFirmBankingUseCase;
 import com.easypay.banking.domain.FirmBankingRequest;
-import com.easypay.banking.domain.RegisteredBankAccount;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.WebAdapter;
+import com.easypay.common.WebAdapter;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

@@ -7,7 +7,7 @@ import com.easypay.membership.application.port.in.ModifyMembershipUseCase;
 import com.easypay.membership.application.port.out.ModifyMembershipPort;
 import com.easypay.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.easypay.common.UseCase;
+import com.easypay.common.UseCase;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
