@@ -4,8 +4,8 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Value;
-import com.easypay.common.Enum.EnumChangingMoneyStatus;
-import com.easypay.common.Enum.EnumChangingType;
+import com.easypay.money.Enum.EnumChangingMoneyStatus;
+import com.easypay.money.Enum.EnumChangingType;
 
 import java.util.Date;
 
