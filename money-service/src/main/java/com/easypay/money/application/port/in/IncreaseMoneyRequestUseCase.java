@@ -4,4 +4,6 @@ import com.easypay.money.domain.MoneyChangingRequest;
 
 public interface IncreaseMoneyRequestUseCase {
     MoneyChangingRequest increaseMoneyRequest(IncreaseMoneyRequestCommand increaseMoneyRequestCommand);
+
+    MoneyChangingRequest increaseMoneyRequestAsync(IncreaseMoneyRequestCommand increaseMoneyRequestCommand);
 }

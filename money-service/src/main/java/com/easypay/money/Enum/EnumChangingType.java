@@ -1,4 +1,4 @@
-package com.easypay.common.Enum;
+package com.easypay.money.Enum;
 
 public enum EnumChangingType {
     INCREASING(0, "증액"),

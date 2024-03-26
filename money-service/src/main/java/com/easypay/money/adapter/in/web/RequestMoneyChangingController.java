@@ -1,5 +1,7 @@
 package com.easypay.money.adapter.in.web;
 
+import com.easypay.money.Enum.EnumChangingType;
+import com.easypay.money.Enum.MoneyChangingResultStatus;
 import com.easypay.money.application.port.in.IncreaseMoneyRequestCommand;
 import com.easypay.money.application.port.in.IncreaseMoneyRequestUseCase;
 import com.easypay.money.domain.MoneyChangingRequest;
@@ -35,5 +37,23 @@ public class RequestMoneyChangingController {
 
         // return decreaseMoneyRequestUseCase.decreaseMoneyRequest()
         return null;
+    }
+
+    @PostMapping(path = "/money/increase-async")
+    MoneyChangingResultDetail increaseMoneyChangingRequestAsync(@RequestBody IncreaseMoneyChangingRequest request) {
+        IncreaseMoneyRequestCommand command = IncreaseMoneyRequestCommand.builder()
+                .targetMembershipId(request.getTargetMembershipId())
+                .changingMoneyAmount(request.getAmount())
+                .build();
+
+        MoneyChangingRequest moneyChangingRequest = increaseMoneyRequestUseCase.increaseMoneyRequestAsync(command);
+
+        // MoneyChangingRequest -> MoneyChangingResultDetail
+        MoneyChangingResultDetail resultDetail = new MoneyChangingResultDetail(
+                moneyChangingRequest.getMoneyChangingRequestId(),
+                EnumChangingType.INCREASING,
+                MoneyChangingResultStatus.SUCCEEDED,
+                moneyChangingRequest.getChangingMoneyAmount());
+        return resultDetail;
     }
 }

@@ -1,4 +1,4 @@
-package com.easypay.common.Enum;
+package com.easypay.money.Enum;
 
 public enum MoneyChangingResultStatus {
     SUCCEEDED, // 성공

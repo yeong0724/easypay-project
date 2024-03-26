@@ -3,8 +3,8 @@ package com.easypay.money.adapter.in.web;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.easypay.common.Enum.MoneyChangingResultStatus;
-import com.easypay.common.Enum.EnumChangingType;
+import com.easypay.money.Enum.MoneyChangingResultStatus;
+import com.easypay.money.Enum.EnumChangingType;
 
 @Data
 @AllArgsConstructor

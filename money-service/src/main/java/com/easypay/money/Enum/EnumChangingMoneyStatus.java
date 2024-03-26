@@ -1,4 +1,4 @@
-package com.easypay.common.Enum;
+package com.easypay.money.Enum;
 
 public enum EnumChangingMoneyStatus {
     REQUESTED(0, "요청"),
